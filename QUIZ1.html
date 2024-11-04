@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2566">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="pt-BR"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Diagnóstico e Autoavaliação - Teste Seu Nível de Dependência&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.answers {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.answers label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #28a745;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #218838;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="quiz-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Diagnóstico e Autoavaliação&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Teste Seu Nível de Dependência&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;form id="quiz-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Adicione todas as perguntas aqui usando a estrutura fornecida anteriormente --&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Pergunta 1.1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;1.1 Com que frequência você consome pornografia?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q1" value="1"&gt; 1: Raramente, talvez uma vez por mês ou menos&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q1" value="2"&gt; 2: Algumas vezes por mês&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q1" value="3"&gt; 3: Semanalmente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q1" value="4"&gt; 4: Várias vezes por semana&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q1" value="5"&gt; 5: Diariamente ou mais&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Adicione as demais perguntas de 1.2 a 5.3 aqui --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">   </span>&lt;!-- Pergunta 1.2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;1.2 Você sente necessidade de consumir mais pornografia para sentir o mesmo prazer?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q2" value="1"&gt; 1: Nunca&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q2" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q2" value="3"&gt; 3: Às vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q2" value="4"&gt; 4: Frequentemente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q2" value="5"&gt; 5: Quase sempre&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Pergunta 1.3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;1.3 Quanto tempo você geralmente passa consumindo pornografia em uma sessão?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q3" value="1"&gt; 1: Menos de 10 minutos&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q3" value="2"&gt; 2: De 10 a 20 minutos&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q3" value="3"&gt; 3: Entre 20 e 40 minutos&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q3" value="4"&gt; 4: Entre 40 minutos e 1 hora&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;label&gt;&lt;input type="radio" name="q3" value="5"&gt; 5: Mais de 1 hora&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Adicione as demais perguntas aqui, utilizando o mesmo padrão para as perguntas de 2.1 a 5.3 --&gt;</p>
+<p class="p1">&lt;!-- Pergunta 2.1 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;2.1 Como você se sente após consumir pornografia?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q4" value="1"&gt; 1: Indiferente, sem emoções fortes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q4" value="2"&gt; 2: Um pouco desconfortável, mas tranquilo&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q4" value="3"&gt; 3: Um pouco culpado ou triste&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q4" value="4"&gt; 4: Muito culpado ou ansioso&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q4" value="5"&gt; 5: Profundamente arrependido e envergonhado&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 2.22 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;2.2 Você usa pornografia como uma forma de aliviar o estresse ou emoções negativas?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q5" value="1"&gt; 1: Nunca&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q5" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q5" value="3"&gt; 3: Às vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q5" value="4"&gt; 4: Frequentemente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q5" value="5"&gt; 5: Quase sempre&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 2.3 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;2.3 Sentimentos de culpa, vergonha ou arrependimento frequentemente ocorrem após o consumo?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q6" value="1"&gt; 1: Nunca&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q6" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q6" value="3"&gt; 3: Às vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q6" value="4"&gt; 4: Frequentemente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q6" value="5"&gt; 5: Quase sempre&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 3.1 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;3.1 A pornografia interfere em seus relacionamentos?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q7" value="1"&gt; 1: Nunca, meus relacionamentos não são afetados&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q7" value="2"&gt; 2: Raramente, mas ocasionalmente noto uma leve interferência&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q7" value="3"&gt; 3: Às vezes sinto que atrapalha minha relação com outras pessoas&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q7" value="4"&gt; 4: Frequentemente percebo dificuldades em relacionamentos por conta do consumo&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q7" value="5"&gt; 5: Quase sempre interfere, afastando-me de relações saudáveis&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 3.2 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;3.2 Você evita compromissos sociais para consumir pornografia?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q8" value="1"&gt; 1: Nunca, a pornografia não afeta meus compromissos sociais&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q8" value="2"&gt; 2: Raramente, talvez tenha acontecido algumas vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q8" value="3"&gt; 3: Às vezes evito interações para consumir pornografia&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q8" value="4"&gt; 4: Frequentemente deixo compromissos de lado&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q8" value="5"&gt; 5: Quase sempre, priorizo o consumo de pornografia sobre compromissos&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 3.3 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;3.3 Você se sente isolado ou desconectado emocionalmente de pessoas próximas devido ao consumo de pornografia?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q9" value="1"&gt; 1: Não, sempre me sinto conectado com as pessoas&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q9" value="2"&gt; 2: Raramente, mas às vezes sinto uma leve desconexão&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q9" value="3"&gt; 3: Às vezes percebo que estou distante emocionalmente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q9" value="4"&gt; 4: Frequentemente me sinto isolado ou desconectado&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q9" value="5"&gt; 5: Quase sempre me sinto desconectado e isolado&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 4.1 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;4.1 Com que facilidade você consegue parar de consumir pornografia quando decide fazê-lo?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q10" value="1"&gt; 1: Muito facilmente, consigo parar sem dificuldade&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q10" value="2"&gt; 2: Relativamente fácil, mas ocasionalmente é desafiador&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q10" value="3"&gt; 3: É difícil, mas possível com esforço&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q10" value="4"&gt; 4: Frequentemente, não consigo controlar&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q10" value="5"&gt; 5: Quase sempre, sinto que não tenho controle&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 4.2 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;4.2 Você já tentou reduzir ou parar o consumo, mas falhou?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q11" value="1"&gt; 1: Nunca precisei tentar parar&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q11" value="2"&gt; 2: Tentei algumas vezes e consegui&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q11" value="3"&gt; 3: Tentei algumas vezes, mas com dificuldade&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q11" value="4"&gt; 4: Frequentemente tento e não consigo&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q11" value="5"&gt; 5: Tentei inúmeras vezes e sempre falhei&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 4.3 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;4.3 A pornografia interfere em suas responsabilidades (como trabalho, estudo, ou tarefas domésticas)?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q12" value="1"&gt; 1: Nunca&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q12" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q12" value="3"&gt; 3: Às vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q12" value="4"&gt; 4: Frequentemente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q12" value="5"&gt; 5: Quase sempre&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 5.1 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;5.1 Você sente uma necessidade crescente de consumir conteúdos mais intensos?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q13" value="1"&gt; 1: Nunca&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q13" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q13" value="3"&gt; 3: Às vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q13" value="4"&gt; 4: Frequentemente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q13" value="5"&gt; 5: Quase sempre&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 5.2 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;5.2 O consumo de pornografia afeta sua qualidade de sono?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q14" value="1"&gt; 1: Nunca&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q14" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q14" value="3"&gt; 3: Às vezes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q14" value="4"&gt; 4: Frequentemente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q14" value="5"&gt; 5: Quase sempre&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Pergunta 5.3 --&gt;</p>
+<p class="p1">&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;5.3 Você sente que seu humor depende do consumo de pornografia?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="answers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q15" value="1"&gt; 1: Não, meu humor não é afetado&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q15" value="2"&gt; 2: Raramente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q15" value="3"&gt; 3: Às vezes percebo uma pequena influência&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q15" value="4"&gt; 4: Frequentemente meu humor depende&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;&lt;input type="radio" name="q15" value="5"&gt; 5: Quase sempre meu humor é dependente&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button type="button" class="submit-btn" onclick="calculateResult()"&gt;Ver Resultado&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="result" id="result"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function calculateResult() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const form = document.getElementById('quiz-form');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const totalQuestions = 15; // Definindo o número total de perguntas para o cálculo</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let score = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (let i = 1; i &lt;= totalQuestions; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const answer = form['q' + i].value;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (answer) score += parseInt(answer);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const result = document.getElementById('result');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (score &gt;= 30 &amp;&amp; score &lt;= 59) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = `Sua pontuação é ${score}. Nível 1 - Baixo. O uso de pornografia está em um nível controlado.`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else if (score &gt;= 60 &amp;&amp; score &lt;= 89) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = `Sua pontuação é ${score}. Nível 2 - Moderado. Sinais de consumo que podem interferir em algumas áreas.`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else if (score &gt;= 90 &amp;&amp; score &lt;= 119) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = `Sua pontuação é ${score}. Nível 3 - Alto. O consumo afeta várias áreas da vida.`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else if (score &gt;= 120 &amp;&amp; score &lt;= 139) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = `Sua pontuação é ${score}. Nível 4 - Crítico. A pornografia tem impacto significativo na vida pessoal e social.`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else if (score &gt;= 140 &amp;&amp; score &lt;= 150) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = `Sua pontuação é ${score}. Nível 5 - Severamente Crítico. Intervenção imediata é necessária.`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>result.textContent = 'Por favor, responda todas as perguntas.';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
